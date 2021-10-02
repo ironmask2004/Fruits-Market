@@ -3,7 +3,8 @@ import 'package:fruits_market/core/widgets/custom_text_field.dart';
 import 'package:fruits_market/core/widgets/space_widget.dart';
 
 class CompleteInfoItem extends StatelessWidget {
-  const CompleteInfoItem({Key? key, required this.text, this.inputType, this.maxLines})
+  const CompleteInfoItem(
+      {Key? key, required this.text, this.inputType, this.maxLines})
       : super(key: key);
   final String text;
   final TextInputType? inputType;
@@ -30,6 +31,7 @@ class CompleteInfoItem extends StatelessWidget {
         CustomTextFormField(
           maxLines: maxLines,
           inputType: inputType,
+          onSaved: (value) {},
         )
       ],
     );
